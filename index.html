@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background">
+
+        
+        <!-- Profile Card -->
         <div class="profile-card">
             <img class="profile-picture" src="https://cdn.discordapp.com/avatars/1134025421487357953/0b59ad98a0e18b8f3389f97678161fc2?size=1024" alt="Profile Picture">
             <h1 class="username">Soul</h1>
@@ -15,15 +17,47 @@
             
             <!-- Buttons with Links -->
             <div class="button-container">
-                <a href="https://www.youtube.com/@Tyre36" class="button" target="_blank">Youtube</a>
-                <a href="https://github.com/tyrr72" class="button" target="_blank">GitHub</a>
-                <a href="https://discord.gg/Ns4a7nt6Wf" class="button" target="_blank">Discord</a>
+                <a href="https://www.youtube.com/@Tyre36" class="ybutton" target="_blank"></a>
+                <a href="https://github.com/soulll999" class="gbutton" target="_blank"></a>
+                <a href="https://discord.gg/Ns4a7nt6Wf" class="dbutton" target="_blank"></a>
             </div>
         </div>
+
+        <!-- Mute Button 
+        <div class="mute-container">
+            <button id="mute-button">Mute</button>
+        </div>
+        -->
     </div>
 
-    <!-- Background Music -->
-    <audio autoplay loop>
-        <source src="https://www.example.com/background-music.mp3" type="audio/mpeg">
+    <!-- Background Music (Mute Initially) -->
+    <audio id="bg-music" autoplay loop>
+        <source src="https://github.com/soulll999/soulll999.github.io/raw/refs/heads/main/lofi%20songs%20for%20slow%20days.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
+    <!-- JavaScript to control mute -->
+    <script>
+        const muteButton = document.getElementById('mute-button');
+        const bgMusic = document.getElementById('bg-music');
+        let isMuted = false;
+
+        // Ensure the audio starts muted (or unmuted if desired) and manage autoplay restriction
+        bgMusic.muted = false; // Initially, not muted
+        bgMusic.volume = 1; // Set full volume initially
+
+        // Wait until the audio is actually loaded to mute (autoplay restrictions)
+        bgMusic.addEventListener('canplaythrough', function() {
+            // Once the audio can play, we set it to unmuted or muted depending on the button
+            bgMusic.muted = isMuted;
+        });
+
+        // Function to toggle mute
+        muteButton.addEventListener('click', function() {
+            isMuted = !isMuted;
+            bgMusic.muted = isMuted;
+            muteButton.textContent = isMuted ? 'Unmute' : 'Mute';
+        });
+    </script>
+</body>
+</html>
