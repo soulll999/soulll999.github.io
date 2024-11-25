@@ -1,0 +1,147 @@
+/* Basic body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222222; /* Dark background for contrast */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('data:image/jpeg;base64,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'); /* Example background image */
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Profile card container */
+.profile-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #333333c9; /* Dark grey background for profile card */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 300px;
+    margin-top: 50px;
+    
+}
+
+/* Profile picture */
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+}
+
+/* Username */
+.username {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Status text */
+.status {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #aaaaaa;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px;
+    
+}
+/* Back button styling */
+
+/* General button styles */
+.button-container a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+/* YouTube button */
+.ybutton {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png'); /* YouTube icon */
+
+    background-color: #ffffff4d;
+}
+
+/* GitHub button */
+.gbutton {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111432.png'); /* Updated GitHub icon */
+
+    background-color: #ffffff4d;
+}
+/* Discord button */
+.dbutton {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111370.png'); /* Discord icon */
+    
+    background-color: #ffffff4d;
+}
+.volume-container {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+.volume-container input {
+    width: 200px;
+    background-color: #222222;
+    color:#222222;
+}
+/* Hover effect for buttons */
+.button-container a:hover {
+    transform: scale(1.1);
+}
+
+.port-container a {
+    display: inline-block; /* Ensures the element respects its width/height */
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    margin: 10px; /* Optional, adds spacing between elements */
+    background-color: #333; /* Base background color */
+    color: white; /* Text color for contrast */
+    text-decoration: none; /* Removes underline */
+    border-radius: 15px 15px 15px 15px; /* Applies border-bottom-right-radius and bottom-left */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+.port-container a:hover {
+    background-color: #444; /* Slightly lighter shade on hover */
+    transform: translateY(-5px); /* Adds a lift effect */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Enhances shadow on hover */
+}
+
+.port {
+    background-color: #000000;
+
+    text-align: center;
+    color: white;
+    text-align: center;
+    
+}
+
+/* Optional: Add responsive styling */
+@media (max-width: 600px) {
+    .profile-card {
+        width: 90%;
+    }
+
+    .button-container a {
+        width: 40px;
+        height: 40px;
+    }
+}
