@@ -38,26 +38,54 @@ games {
     gap: 10px; /* Space between buttons */
     
 }
+.port-container a {
+    display: inline-block; /* Ensures the element respects its width/height */
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    margin: 10px; /* Optional, adds spacing between elements */
+    background-color: #575757; /* Base background color */
+    color: white; /* Text color for contrast */
+    text-decoration: none; /* Removes underline */
+    border-radius: 15px 15px 15px 15px; /* Applies border-bottom-right-radius and bottom-left */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+    width: 250px;
+}
 
+.port-container a:hover {
+    background-color: #444; /* Slightly lighter shade on hover */
+    transform: translateY(-5px); /* Adds a lift effect */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Enhances shadow on hover */
+}
+
+.port {
+    background-color: #000000;
+
+    text-align: center;
+    color: white;
+    text-align: center;
+    
+}
 .back-button-container {
-    position: fixed;  /* Adjust to fit your design */
+    
+    position:relative;
     z-index: 1000; /* Ensure it stays on top of other content */
 transition: transform 0.2s ease-in-out;  /* Smooth scaling transition */
+
 }
 
 /* Back Button */
 .back-button {
     
-    padding: 10px 60px;
-    left: 20px; /* Adjust as necessary */
-    bottom: 20px; /* Adjust as necessary */
+    padding: 10px 50px;
+    left: -270px; /* Adjust as necessary */
+    bottom: -350px; /* Adjust as necessary */
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     text-decoration: none;  /* Remove underline */
     
-    position: fixed;
+    position:relative;
 }
 
 /* Hover effect on the container */
