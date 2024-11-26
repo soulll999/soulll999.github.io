@@ -40,22 +40,24 @@ games {
 }
 
 .back-button-container {
-    position: fixed;
-    bottom: 200px; /* Adjust to fit your design */
-    left: 50px;   /* Adjust to fit your design */
+    position: fixed;  /* Adjust to fit your design */
     z-index: 1000; /* Ensure it stays on top of other content */
 transition: transform 0.2s ease-in-out;  /* Smooth scaling transition */
 }
 
 /* Back Button */
 .back-button {
-    padding: 10px 280px;
+    
+    padding: 10px 60px;
+    left: 20px; /* Adjust as necessary */
+    bottom: 20px; /* Adjust as necessary */
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     text-decoration: none;  /* Remove underline */
     
+    position: fixed;
 }
 
 /* Hover effect on the container */
