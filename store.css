@@ -1,0 +1,153 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b2838; /* Steam's dark blue background */
+    color: #c7d5e0; /* Light text color for contrast */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171a21; /* Dark header background */
+    padding: 10px 20px;
+    border-bottom: 2px solid #66c0f4; /* Blue accent line */
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #66c0f4; /* Steam blue */
+    margin: 0;
+}
+
+.navbar a {
+    color: #c7d5e0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #66c0f4;
+}
+
+/* Main content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    background-color: #10171d; /* Subtle dark container background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner h2 {
+    color: #c7d5e0;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    color: #8f98a0; /* Slightly muted text for detail */
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #171a21;
+    color: #8f98a0;
+    padding: 10px 0;
+    border-top: 2px solid #66c0f4;
+}
+
+/* Add game store styling */
+.game-store {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #10171d;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.game-store h2 {
+    color: #c7d5e0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.game-item {
+    background-color: #1b2838;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+}
+
+.game-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+/* Purchase Button Styles */
+.purchase-button {
+    display: inline-block;
+    background-color: #66c0f4;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    width: 180px;
+}
+
+.purchase-button:hover {
+    background-color: #549bc8; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+.purchase-button:active {
+    background-color: #417899; /* Even darker blue when clicked */
+    transform: scale(0.95); /* Shrinks slightly to indicate press */
+}
+
+.game-item img {
+    width: 90px;
+    object-fit: cover;
+    height: 90px;
+    
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.game-item h3 {
+    color: #c7d5e0;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.game-item p {
+    color: #66c0f4;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
